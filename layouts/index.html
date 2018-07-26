@@ -13,7 +13,7 @@
 
     <br/>
     {{ range first 3 .Site.RegularPages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a><br /><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span><br />{{ .Content }}</li>
+    <li style="list-style:none"><a href="{{ .Permalink }}">{{ .Title }}</a><br /><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span><br />{{ .Content }}</li>
     {{ end }}
 
   </div>
