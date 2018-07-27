@@ -10,7 +10,7 @@
   <ul>
     {{ range $page := $value.WeightedPages }}
     <li>
-      <a href="{{ . }}">
+      <a href="/post/{{ $page.Slug }}">
         {{ $page.Name }}
       </a>
     </li>
