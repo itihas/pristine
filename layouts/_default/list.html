@@ -14,7 +14,7 @@
     <h3>{{ .Key | title }}</h3>
     {{ end }}
     <ul>
-        {{ range $.Site.RegularPages.ByDate }}
+        {{ range $.Site.RegularPages.ByDate.Reverse }}
         <li>
         <a href="{{ .Permalink }}">{{ .Title }}</a>
         </li>
