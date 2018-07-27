@@ -61,6 +61,10 @@ a:visited {
     text-decoration:none;
 }
 
+li {
+    list-style:none
+}
+
 h3 {
     margin-top: 25px;
     color: #303030;
