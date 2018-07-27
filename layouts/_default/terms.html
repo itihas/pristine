@@ -1,0 +1,23 @@
+{{ partialCached "header/head.html" . }}
+
+
+<div id="main">
+  {{ partialCached "nav.html" . }}
+
+
+  {{ range $key,$value := .Data.Terms.ByCount }}
+  <h3> {{ $value.Name  }}</h3>
+  <ul>
+    {{ range $page := $value.WeightedPages }}
+    <li>
+      <a href="{{ . }}">
+        {{ $page.Name }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }}
+</div>
+
+{{ partial "sidemenu.html" . }}
+{{ partialCached "footer/foot.html" . }} 
